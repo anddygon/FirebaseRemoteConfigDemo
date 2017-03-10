@@ -19,6 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
+        let i = FRC.shared.intForKey(key: .experiment)
+        print("刚启动的i \(i)")
+        
+        let dict = FRC.shared.dictForKey(key: .test)
+        print("获取的dict \(dict)")
+        
         return true
     }
 

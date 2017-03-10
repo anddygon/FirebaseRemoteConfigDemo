@@ -16,6 +16,8 @@
 		E1526D811E72EDE900929E24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1526D801E72EDE900929E24 /* GoogleService-Info.plist */; };
 		E1526D841E72F0B200929E24 /* FRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1526D831E72F0B200929E24 /* FRC.swift */; };
 		E1526D861E72F46700929E24 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1526D851E72F46700929E24 /* AdSupport.framework */; };
+		E17049EE1E72FFDF002097FC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17049ED1E72FFDF002097FC /* String.swift */; };
+		E17049F01E7300DD002097FC /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17049EF1E7300DD002097FC /* Swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E1526D801E72EDE900929E24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1526D831E72F0B200929E24 /* FRC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRC.swift; sourceTree = "<group>"; };
 		E1526D851E72F46700929E24 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E17049ED1E72FFDF002097FC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E17049EF1E7300DD002097FC /* Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		E1526D6D1E72EC9400929E24 /* FirebaseRemoteConfigDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E17049EC1E72FFCD002097FC /* Extensions */,
 				E1526D821E72F0AA00929E24 /* FRC */,
 				E1526D6E1E72EC9400929E24 /* AppDelegate.swift */,
 				E1526D701E72EC9400929E24 /* ViewController.swift */,
@@ -104,6 +109,15 @@
 				E1526D831E72F0B200929E24 /* FRC.swift */,
 			);
 			name = FRC;
+			sourceTree = "<group>";
+		};
+		E17049EC1E72FFCD002097FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E17049ED1E72FFDF002097FC /* String.swift */,
+				E17049EF1E7300DD002097FC /* Swift.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,8 @@
 			files = (
 				E1526D711E72EC9400929E24 /* ViewController.swift in Sources */,
 				E1526D6F1E72EC9400929E24 /* AppDelegate.swift in Sources */,
+				E17049EE1E72FFDF002097FC /* String.swift in Sources */,
+				E17049F01E7300DD002097FC /* Swift.swift in Sources */,
 				E1526D841E72F0B200929E24 /* FRC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +375,7 @@
 				INFOPLIST_FILE = FirebaseRemoteConfigDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherit)";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chicv.FirebaseRemoteConfigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -375,6 +391,7 @@
 				INFOPLIST_FILE = FirebaseRemoteConfigDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chicv.FirebaseRemoteConfigDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
