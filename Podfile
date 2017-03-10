@@ -8,5 +8,7 @@ target 'FirebaseRemoteConfigDemo' do
   # Pods for FirebaseRemoteConfigDemo
 
   pod 'Firebase/Core'
+  pod 'Firebase/RemoteConfig'
+  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 end
